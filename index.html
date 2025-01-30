@@ -3,84 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmofeed Lead Demo</title>
-    <link rel="stylesheet" href="style.css">
-    <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    <link rel="icon" type="image/x-icon" href="./images/fav.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+    <title>Onboarding Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="site-header">
-        <a href=""><img src="./images/logo.png" alt="Site Name" /></a>
-  </div>  
-    </header>
-    <section class="intrest_form">
-        <h1 class="title">Prospect Form</h1>
-        <div class="container mt-5">
-         <p><span>*</span> Indicates required fields</p>
+    <div class="onboarding-container">
+        <div class="form-container">
+            <div class="left-container">
+                <div class="auth-form">
+                    <div class="auth-head">
+                        <div class="auth-form-title">Let's create your SuperProfile!</div>
+                        <div class="auth-form-description">Your all-in-one digital store to showcase and sell</div>
+                    </div>
+                    <div class="auth-form-details">
+                        <div class="auth-current-option">
+                            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS00000CFJLW" method="POST">
     
-    <div class="container">
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS00000CFJLW" method="POST">
-    
-        <input type=hidden name="oid" value="00DNS00000CFJLW">
-        <input type=hidden name="retURL" value="https://cosmofeed.com">
-        
-        <!--  ----------------------------------------------------------------------  -->
-        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-        <!--  these lines if you wish to test in debug mode.                          -->
-        <!--  <input type="hidden" name="debug" value=1>                              -->
-        <!--  <input type="hidden" name="debugEmail" value="afrose0719@gmail.com">    -->
-        <!--  ----------------------------------------------------------------------  -->
-        <div class="mb-3">
-        <label class="form-label" for="first_name">First Name</label>
-        <input  id="first_name" class="form-control" maxlength="40" name="first_name" size="20" type="text" /><br>
-    </div>
-    <div class="mb-3">
-        <label class="form-label" for="last_name" ><span>*</span> Last Name</label>
-        <input class="form-control"  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
-    </div>
-    <div class="mb-3">
-        <label class="form-label" for="mobile"><span>*</span> Mobile</label>
-        <input class="form-control"   id="mobile" maxlength="40" name="mobile" size="20" type="text" required/><br>
-    </div>
-    <div class="mb-3">
-        <label class="form-label" for="email"><span>*</span> Email</label>
-        <input class="form-control"  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
-    </div>
-    <div class="mb-3">
-    <label for="lead_source">Lead Source</label><select class="form-control" id="lead_source" name="lead_source"><option value="">--None--</option><option value="Web">Web</option>
-        <option value="Phone Inquiry">Phone Inquiry</option>
-        <option value="Partner Referral">Partner Referral</option>
-        <option value="Purchased List">Purchased List</option>
-        <option value="Other">Other</option>
-        </select><br>
-    </div> 
-    <div class="mb-3">
-        <label class="form-label" for="company">Company</label>
-        <input class="form-control"  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-    </div>  
-    <div class="mb-3">
-        <label class="form-label" for="city">City</label>
-        <input class="form-control"  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-    </div>
-    <div class="mb-3">
-        <label class="form-label" for="state">State/Province</label>
-        <input class="form-control"  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-    </div>
-        <input type="submit" name="submit" class="btn btn-primary">
-        
-        </form>
+                                <input type=hidden name="oid" value="00DNS00000CFJLW">
+                                <input type=hidden name="retURL" value="https://cosmofeed.com">
+                                
+                                <!--  ----------------------------------------------------------------------  -->
+                                <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                                <!--  these lines if you wish to test in debug mode.                          -->
+                                <!--  <input type="hidden" name="debug" value=1>                              -->
+                                <!--  <input type="hidden" name="debugEmail" value="afrose0719@gmail.com">    -->
+                                <!--  ----------------------------------------------------------------------  -->
+                                
+                            <div class="mb-3">
+                                <!-- <label class="form-label" for="last_name" ><span>*</span> Last Name</label> -->
+                                <input class="form-control" placeholder="Name"  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label class="form-label" for="mobile"><span>*</span> Mobile</label> -->
+                                <input class="form-control" id="phone" placeholder="Phone Number"   maxlength="40" name="mobile" size="50" type="tel" required/><br>
+                                <span id="valid-msg" class="hide">Valid</span>
+                                <span id="error-msg" class="hide">Invalid number</span>
+                            </div>
+                            <div class="mb-3" style="margin-top: 20px;">
+                                <!-- <label class="form-label" for="email"><span>*</span> Email</label> -->
+                                <input class="form-control" placeholder="Email"  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
+                            </div>
+                            <div class="mb-3" style="margin-bottom: 20px;"> 
+                                <select id="00NNS00000Vinft" name="00NNS00000Vinft" title="How did you hear about us" class="form-control">
+                                    <option value="" disabled selected>How did you hear about us?</option>
+                                    <option value="Ads on(Instagram,Facebook,etc.)">Ads on(Instagram,Facebook,etc.)</option>
+                                    <option value="Youtube">Youtube</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="Google Search">Google Search</option>
+                                    <option value="Recommended by a friend">Recommended by a friend</option>
+                                    <option value="SuperProfile team reached out">SuperProfile team reached out</option>
+                                </select>
+                            </div>
+                          <input type="submit" name="submit" class="base-button md-button primary-button">
+                                
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="auth-form">
+                    <div class="auth-head">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                        
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <img src="../images/sell1.png" alt="Los Angeles" style="width:100%;">
+                              </div>
+                        
+                              <div class="item">
+                                <img src="../images/sell2.png" alt="Chicago" style="width:100%;">
+                              </div>
+                            
+                              <div class="item">
+                                <img src="../images/sell3.png" alt="New york" style="width:100%;">
+                              </div>
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
-</section>
+    <script>
+            var telInput = $("#phone"),
+                errorMsg = $("#error-msg"),
+                validMsg = $("#valid-msg");
+        
+            
+            telInput.intlTelInput({
+                allowExtensions: true,
+                formatOnDisplay: true,
+                autoFormat: true,
+                autoHideDialCode: true,
+                autoPlaceholder: true,
+                nationalMode: false,
+                preferredCountries: ['in', 'us', 'qa', 'om', 'bh', 'kw', 'ma'],
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
+            });
+        
+            var reset = function () {
+                telInput.removeClass("error");
+                errorMsg.addClass("hide");
+                validMsg.addClass("hide");
+            };
+        
+            
+            telInput.blur(function () {
+                reset();
+                if ($.trim(telInput.val())) {
+                    if (telInput.intlTelInput("isValidNumber")) {
+                        validMsg.removeClass("hide");
+                    } else {
+                        telInput.addClass("error");
+                        errorMsg.removeClass("hide");
+                    }
+                }
+            });
+            
+            telInput.on("keyup change", reset);
+            $("form").submit(function () {
+                var fullPhoneNumber = telInput.intlTelInput("getNumber"); 
+                $("<input>").attr({
+                    type: "hidden",
+                    name: "mobile", 
+                    value: fullPhoneNumber
+                }).appendTo("form");
+                
+                $("#phone").attr("name", "");
+            });
+        </script>
 </body>
 </html>
-
-    
