@@ -43,7 +43,7 @@ div{
     align-items: center;
 }
 .right-container {
-    background: url(../images/bg1.png);
+    background: url(./images/bg1.png);
     color: white;
 }
 .auth-form {
