@@ -12,26 +12,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
-    <title>Onboarding Form</title>
+    <title>SVT Quote Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="onboarding-container">
         <div class="form-container">
             <div class="left-container">
+                <div class="svt=logo">
+                    <img src="./images/svtlogo.png" style="display: block;" alt="SVT Logo">
+                </div>
                 <div class="auth-form">
                     <div class="auth-head">
-                        <div class="auth-form-title">Let's create your SuperProfile!</div>
-                        <div class="auth-form-description">Your all-in-one digital store to showcase and sell</div>
+                        <div class="auth-form-title">Want to hear from Us</div>
+                        <!-- <div class="auth-form-description">Your all-in-one digital store to showcase and sell</div> -->
                     </div>
                     <div class="auth-form-details">
                         <div class="auth-current-option">
-                            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DNS00000CFJLW" method="POST">
+                            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGC000005scrc" method="POST">
     
-                                <input type=hidden name="oid" value="00DNS00000CFJLW">
-                                <input type=hidden name="retURL" value="https://cosmofeed.com">
-                                <input type="hidden" name="lead_source" value="Web">
-                                <input type="hidden" name="lead_source" value="Web">
+                                <input type=hidden name="oid" value="00DGC000005scrc">
+                                <input type=hidden name="retURL" value="https://svtprints.com/">
+                                
                                 <!--  ----------------------------------------------------------------------  -->
                                 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
                                 <!--  these lines if you wish to test in debug mode.                          -->
@@ -43,6 +45,7 @@
                                 <!-- <label class="form-label" for="last_name" ><span>*</span> Last Name</label> -->
                                 <input class="form-control" placeholder="Name"  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
                             </div>
+                            
                             <div class="mb-3">
                                 <!-- <label class="form-label" for="mobile"><span>*</span> Mobile</label> -->
                                 <input class="form-control" id="phone" placeholder="Phone Number"   maxlength="40" name="mobile" size="50" type="tel" required/><br>
@@ -53,8 +56,12 @@
                                 <!-- <label class="form-label" for="email"><span>*</span> Email</label> -->
                                 <input class="form-control" placeholder="Email"  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
                             </div>
+                            <div class="mb-3" >    
+                           <input class="form-control"  id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" /><br>    
+                        </div>        
+                            
                             <div class="mb-3" style="margin-bottom: 20px;"> 
-                                <select id="00NNS00000Vinft" name="00NNS00000Vinft" title="How did you hear about us" class="form-control">
+                                <!-- <select id="00NNS00000Vinft" name="00NNS00000Vinft" title="How did you hear about us" class="form-control">
                                     <option value="" disabled selected>How did you hear about us?</option>
                                     <option value="Ads on(Instagram,Facebook,etc.)">Ads on(Instagram,Facebook,etc.)</option>
                                     <option value="Youtube">Youtube</option>
@@ -62,8 +69,20 @@
                                     <option value="LinkedIn">LinkedIn</option>
                                     <option value="Google Search">Google Search</option>
                                     <option value="Recommended by a friend">Recommended by a friend</option>
-                                    <option value="SuperProfile team reached out">SuperProfile team reached out</option>
-                                </select>
+                                </select> -->
+                                <select title="How did you hear about us" class="form-control" id="lead_source" name="lead_source"><option value="">--None--</option><option value="Advertisement">Advertisement</option>
+                                    <option value="Customer Event">Customer Event</option>
+                                    <option value="Employee Referral">Employee Referral</option>
+                                    <option value="External Referral">External Referral</option>
+                                    <option value="Google AdWords">Google AdWords</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Partner">Partner</option>
+                                    <option value="Purchased List">Purchased List</option>
+                                    <option value="Trade Show">Trade Show</option>
+                                    <option value="Webinar">Webinar</option>
+                                    <option value="Website">Website</option>
+                                    </select><br>
+                                    
                             </div>
                           <input type="submit" name="submit" class="base-button md-button primary-button">
                                 
@@ -86,11 +105,11 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                               <div class="item active">
-                                <img src="./images/sell1.png" alt="Los Angeles" style="width:100%;">
+                                <img src="./images/OPPORTUNITIES.png" alt="Los Angeles" style="width:100%;">
                               </div>
                         
                               <div class="item">
-                                <img src="./images/sell2.png" alt="Chicago" style="width:100%;">
+                                <img src="./images/Products.png" alt="Chicago" style="width:500px;height:450px;display:block;">
                               </div>
                             
                               <div class="item">
